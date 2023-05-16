@@ -12,7 +12,7 @@ export const CocktailList = () => {
 
     useEffect(() => {
         dispatch(fetchCocktails());
-    }, []);
+    }, [dispatch]);
 
     
 
@@ -57,9 +57,9 @@ export const CocktailList = () => {
                     <div className='item' key={id}>
                         <img src={image} alt='ll' className='card-image'/>
                         <div className='card-info'>
-                            <h4 className='product-title'>{name}</h4>
-                            <p className='card-title'>{info}</p>
-                            <p className='card-title'>{glass}</p>
+                            <h4 className='product-title'>name: {name}</h4>
+                            <p className='card-title'>info: {info}</p>
+                            <p className='card-title'>glass: {glass}</p>
                             <Link to={`/cocktail/${id}`}>
                                 <button className='btnforlist'><span>details</span><i></i></button>
                             </Link>
