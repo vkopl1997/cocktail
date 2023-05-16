@@ -1,0 +1,66 @@
+.button{
+    position: relative;
+    background: #faf7f7;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+}
+.button:hover{
+    letter-spacing: 0.25em;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    color: #00acea;
+    box-shadow: 0 0 35px #00acea;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+.button span{
+    position: relative;
+    z-index: 1;
+}
+.button i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.button i::before{
+    content: '';
+    position: absolute;
+    border: 2px solid #00acea;
+    top: -3.5px;
+    left: 80%;
+    width: 10px;
+    height: 5px;
+    transform: translateX(-50%);
+    background: #27282c;
+    transition: 0.5s;
+}
+.button:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+.button i::after{
+    content: '';
+    position: absolute;
+    border: 2px solid #00acea;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    background: #27282c;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.button:hover i::after{
+    width: 20px;
+    left: 80%;
+}

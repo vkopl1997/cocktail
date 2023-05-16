@@ -1,0 +1,107 @@
+.navbar{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(4, 34, 74);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar > span{
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 2%;
+    background-image: linear-gradient(90deg,#cac7ff,#b153c0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+.nav-wrapper{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+.nav-wrapper span{
+    font-size: 26px;
+    background-image: linear-gradient(90deg, #b153c0,#cac7ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+.buttonnav{
+    position: relative;
+    background: #faf7f7;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+}
+.buttonnav:hover{
+    letter-spacing: 0.25em;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    color: #00acea;
+    box-shadow: 0 0 35px #00acea;
+}
+.buttonnav{
+    background: #b153c0;
+}
+.buttonnav::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: rgb(4, 34, 74);
+}
+.buttonnav span{
+    position: relative;
+    z-index: 1;
+}
+.buttonnav i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.buttonnav i::before{
+    content: '';
+    position: absolute;
+    border: 2px solid #b153c0;
+    top: -3.5px;
+    left: 80%;
+    width: 10px;
+    height: 5px;
+    transform: translateX(-50%);
+    background: #b153c0;
+    transition: 0.5s;
+}
+.buttonnav:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+.buttonnav i::after{
+    content: '';
+    position: absolute;
+    border: 2px solid #b153c0;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    background: #b153c0;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.buttonnav:hover i::after{
+    width: 20px;
+    left: 80%;
+}

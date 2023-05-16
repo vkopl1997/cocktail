@@ -1,0 +1,125 @@
+*{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.container{
+    background: radial-gradient(#1a0243, #300337,#010945);
+    color: #ececec;
+}
+h2{
+    text-align: center;
+    margin-bottom: 50rem;
+    font-size: 4rem;
+}
+.all-product{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    overflow: hidden;
+    background: radial-gradient(#292929,#511096);
+    color: #FFF;
+    width: 260px;
+    height: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.item:hover img{
+    scale: 1.1;
+}
+.item:hover{
+    box-shadow: 5px 15px 30px 5px #e18282;
+}
+.card-info{
+    text-align: center;
+}
+.product-title{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.card-title{
+    font-weight: 800;
+}
+.item img{
+    height: 200px;
+    transform: all 0.9s;
+    margin: 1rem;
+}
+
+
+.btnforlist{
+    position: relative;
+    background: #105396;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+}
+.btnforlist:hover{
+    letter-spacing: 0.25em;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    box-shadow: 0 0 35px #00acea;
+}
+.btnforlist::before{
+    content: 'details';
+    position: absolute;
+    inset: 2px;
+    background: radial-gradient(#4f13cf,#511096);
+    color: #FFF  !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.btnforlistton > span{
+    position: relative;
+    z-index: 1;
+}
+.btnforlist i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.btnforlist i::before{
+    content: '';
+    position: absolute;
+    border: 2px solid #00acea;
+    top: -3.5px;
+    left: 80%;
+    width: 10px;
+    height: 5px;
+    transform: translateX(-50%);
+    background: #27282c;
+    transition: 0.5s;
+}
+.btnforlist:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+.btnforlist i::after{
+    content: '';
+    position: absolute;
+    border: 2px solid #00acea;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    background: radial-gradient(#292929,#511096);
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.btnforlist:hover i::after{
+    width: 20px;
+    left: 80%;
+}
